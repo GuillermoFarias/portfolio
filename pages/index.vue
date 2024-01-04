@@ -55,7 +55,10 @@ const personalEmail = "guillermodanilo08@gmail.com";
             </span>
           </div>
           <div class="col-12 xs:pt-0 sm:pt-0">
-            <GradientText value="Senior Software Engineer"></GradientText>
+            <GradientText
+              value="Senior Software Engineer"
+              size="3xl"
+            ></GradientText>
           </div>
           <div class="col-12 xs:hidden">
             <span class="text-500 text-lg mt-2">
