@@ -72,4 +72,12 @@ const sizeMap: Record<string, string> = {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+@media (prefers-reduced-motion: no-preference) {
+  @keyframes move-bg {
+    to {
+      background-position: var(--bg-size) 0;
+    }
+  }
+}
 </style>

@@ -13,10 +13,13 @@ i18n.setLocale(lang.value);
 
 useHead({
   title: "Guillermo Farías",
-  meta: [{ name: "description", content: "My amazing site." }],
-  bodyAttrs: {
-    class: "test",
-  },
+  meta: [
+    {
+      name: "description",
+      content:
+        "Sr. Software Engineer with 7+ years of experience in the software industry.",
+    },
+  ],
   script: [{ innerHTML: "console.log('Hola! ¿Qué haces aquí 👀?')" }],
   link: [
     {

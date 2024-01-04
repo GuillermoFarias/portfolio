@@ -19,4 +19,13 @@ export default defineNuxtConfig({
   i18n: {
     vueI18n: "./i18n.config.ts",
   },
+  runtimeConfig: {
+    public: {
+      EMAIL: process.env.NUXT_EMAIL,
+      CV_PATH: process.env.NUXT_CV_PATH,
+      LINKEDIN: process.env.NUXT_LINKEDIN,
+      GITHUB: process.env.NUXT_GITHUB,
+      MEDIUM: process.env.NUXT_MEDIUM,
+    },
+  },
 });

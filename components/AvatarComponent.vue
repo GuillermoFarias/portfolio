@@ -1,6 +1,4 @@
 <script setup lang="ts">
-const isDark = useState("isDark", () => true);
-
 defineProps({
   size: {
     type: Number,
@@ -25,6 +23,8 @@ const sizeMap: Record<number, string> = {
   7: "profile-7",
   8: "profile-8",
   9: "profile-9",
+  10: "profile-10",
+  11: "profile-11",
 };
 
 const fontMap: Record<number, string> = {
@@ -37,6 +37,7 @@ const fontMap: Record<number, string> = {
   8: "font-8",
   9: "font-9",
   10: "font-10",
+  11: "font-11",
 };
 </script>
 <template>
@@ -141,6 +142,15 @@ const fontMap: Record<number, string> = {
   height: 10rem;
 }
 .font-10 {
-  font-size: 10rem;
+  font-size: 1rem !important;
+}
+
+.profile-11 {
+  width: 11rem;
+  height: 11rem;
+}
+
+.font-11 {
+  font-size: 1.1rem !important;
 }
 </style>
