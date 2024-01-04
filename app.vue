@@ -17,7 +17,7 @@ useHead({
   bodyAttrs: {
     class: "test",
   },
-  script: [{ innerHTML: "console.log('Hello world')" }],
+  script: [{ innerHTML: "console.log('Hola! ¿Qué haces aquí 👀?')" }],
   link: [
     {
       id: "theme-link",
