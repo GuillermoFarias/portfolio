@@ -165,8 +165,7 @@ const year = new Date().getFullYear();
     </div>
   </div>
   <Divider></Divider>
-
-  <div class="py-2 text-center">
+  <div class="py-2 text-center mt-5">
     <AvatarComponent :size="3" :openToWork="false" />
     <div class="font-medium text-900 mt-2 mb-2">
       &copy; {{ year }} Guillermo Farías
