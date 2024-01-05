@@ -1,49 +1,48 @@
 <script setup>
-import Timeline from "primevue/timeline";
 import Avatar from "primevue/avatar";
-import Card from "primevue/card";
-import Divider from "primevue/divider";
-import experience from "../data/experience.json";
-import TechIcon from "./TechIcon.vue";
-import { ref, watch } from "vue";
 
-const events = experience;
+const { getLocaleMessage } = useI18n();
+const language = useState("lang", () => "es");
+const isDark = useState("isDark", () => false);
 
-const props = defineProps({
-  language: {
-    type: Object,
-    required: true,
-  },
-  dark: {
-    type: Boolean,
-    required: false,
-  },
+const experience = ref([]);
+
+const loadFromLanguage = async () => {
+  const messages = getLocaleMessage(language.value);
+  experience.value = messages.experience;
+};
+
+watch(language, (value) => {
+  loadFromLanguage();
 });
 
-watch(
-  () => props.language.code,
-  (newVal) => {
-    languageCode.value = newVal;
-  }
-);
-
-const languageCode = ref(props.language.code);
+onMounted(() => {
+  loadFromLanguage();
+});
 </script>
 <template>
   <Timeline
-    :value="events"
+    :value="experience"
     align="left"
     class="customized-timeline"
     :pt="{
       opposite: {
         style: 'flex: none !important; padding: 0 !important;',
       },
+      connector: {
+        style:
+          'width: 1px !important;background-color: var(--surface-d) !important',
+      },
     }"
   >
     <template #marker="slotProps">
       <Avatar
-        :label="slotProps.item.avatar"
-        :style="`background-color:` + slotProps.item.color + `; color: #ffffff`"
+        :label="slotProps.item.company.avatar"
+        :style="
+          `background-color:` +
+          slotProps.item.company.color +
+          `; color: #ffffff`
+        "
         shape="circle"
         v-animateonscroll="{
           enterClass: 'fadein',
@@ -52,16 +51,18 @@ const languageCode = ref(props.language.code);
     </template>
     <template #content="slotProps">
       <a
-        :href="slotProps.item.url"
+        :href="slotProps.item.company.url"
         target="_blank"
-        :style="`color:` + slotProps.item.color + `; text-decoration: none`"
+        :style="
+          `color:` + slotProps.item.company.color + `; text-decoration: none`
+        "
         rel="noopener noreferrer"
         class="text-xl font-bold"
         v-animateonscroll="{
           enterClass: 'fadein',
         }"
       >
-        {{ slotProps.item.company }}
+        {{ slotProps.item.company.name }}
         <i class="pi pi-link"></i>
       </a>
       <Card
@@ -78,23 +79,20 @@ const languageCode = ref(props.language.code);
           {{ slotProps.item.from }} - {{ slotProps.item.to }}
           <div class="mt-2"></div>
           <i class="pi pi-building"></i>
-          {{ slotProps.item.industry }}
+          {{ slotProps.item.company.industry }}
           <br />
         </template>
         <template #content>
-          {{
-            slotProps.item?.job?.description ||
-            slotProps.item?.job?.["description_" + languageCode]
-          }}
+          {{ slotProps.item?.job?.description }}
           <Divider class="mb-0" />
           <h2 class="text-sm font-bold mt-2">
-            {{ language.timeline.technologies.title }}
+            {{ slotProps.item.technologies.title }}
           </h2>
           <TechIcon
-            v-for="tech in slotProps.item?.job?.technologies"
+            v-for="tech in slotProps.item.technologies"
             :key="tech"
             :icon="tech"
-            :dark="dark"
+            :dark="isDark"
             size="medium"
             :hover="true"
           />
@@ -104,7 +102,7 @@ const languageCode = ref(props.language.code);
   </Timeline>
 </template>
 
-<style>
+<style scoped>
 .p-card .p-card-body {
   padding: 1rem !important;
 }
@@ -120,5 +118,11 @@ const languageCode = ref(props.language.code);
 .p-card-content {
   padding: 0rem 0 !important;
   padding-top: 1rem !important;
+}
+
+.p-card {
+  border: var(--surface-d) 1px solid;
+  box-shadow: none !important;
+  border-radius: 2px;
 }
 </style>

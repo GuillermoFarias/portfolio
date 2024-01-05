@@ -27,6 +27,10 @@ useHead({
       rel: "stylesheet",
       href: () => (isDark.value ? darkTheme : lightTheme),
     },
+    {
+      rel: "stylesheet",
+      href: "https://cdn.jsdelivr.net/gh/dheereshagrwal/colored-icons@1.7.3/src/app/ci.min.css",
+    },
   ],
 });
 

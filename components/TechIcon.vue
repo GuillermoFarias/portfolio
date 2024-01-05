@@ -1,7 +1,7 @@
 <script setup>
 import Image from "primevue/image";
 import { computed } from "vue";
-import techIcons from "../data/techicons.json";
+import techIcons from "~/data/techicons.json";
 
 const props = defineProps({
   icon: {
@@ -112,20 +112,21 @@ const imageSizes = {
     v-tooltip.top="iconTitle"
     :style="style"
   ></i>
-  <Image
-    v-else-if="type === 'image'"
-    :src="iconImage"
-    :width="imageSizes[size]"
-    :height="imageSizes[size]"
-    href="#"
-    :class="`techicon ` + (hover ? 'techicon-hover' : '') + ` ` + class_"
-    v-tooltip.top="iconTitle"
-    :pt="{
-      image: {
-        style: 'margin-bottom: 6px !important;',
-      },
-    }"
-  />
+  <i v-else-if="type === 'image'">
+    <Image
+      :src="iconImage"
+      :width="imageSizes[size]"
+      :height="imageSizes[size]"
+      href="#"
+      :class="`techicon ` + (hover ? 'techicon-hover' : '') + ` ` + class_"
+      v-tooltip.top="iconTitle"
+      :pt="{
+        image: {
+          style: 'margin-bottom: 6px !important;',
+        },
+      }"
+    />
+  </i>
 </template>
 
 <style scoped>
