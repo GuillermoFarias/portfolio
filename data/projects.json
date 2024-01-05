@@ -7,12 +7,12 @@
         "type": "Web, Back and Front",
         "motivation": "Technical Test",
         "technologies": [
+            "postgresql",
             "vue",
             "typescript",
             "adonisjs",
             "primevue",
-            "railway",
-            "postgresql"
+            "railway"
         ],
         "repository": "https://github.com/GuillermoFarias/ufacil-back",
         "url": "https://ufacil.gfarias.cl"
@@ -28,9 +28,9 @@
             "laravel",
             "composer",
             "phpunit",
+            "codefactor",
             "codacy",
-            "codecov",
-            "codefactor"
+            "codecov"
         ],
         "repository": "https://github.com/GuillermoFarias/laravel-previ-scraper",
         "url": "https://github.com/GuillermoFarias/laravel-previ-scraper"
