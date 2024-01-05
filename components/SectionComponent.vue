@@ -25,7 +25,7 @@ const props = defineProps({
     <div class="grid">
       <!-- Only one column -->
       <div v-if="columns.length === 0" class="col-12 pt-0 pb-0">
-        <h2 class="text-2xl text-700 font-bold mt-1">
+        <h2 class="text-2xl text-700 font-bold mt-2">
           <i class="pi pi-angle-double-right" style="font-size: 1.2rem"></i>
           {{ title }}
         </h2>
@@ -37,7 +37,7 @@ const props = defineProps({
       <!-- Multiple columns -->
       <template v-else-if="columns.length > 0" v-for="column in columns">
         <div :class="column['class'] + ` pt-0`">
-          <h2 class="text-2xl text-700 font-bold mt-1">
+          <h2 class="text-2xl text-700 font-bold mt-2">
             <i class="pi pi-angle-double-right" style="font-size: 1.2rem"></i>
             {{ column["title"] }}
           </h2>
