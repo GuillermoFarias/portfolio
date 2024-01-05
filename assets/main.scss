@@ -82,3 +82,22 @@ body {
         padding: 2rem 1rem;
     }
 }
+
+.p-card .p-card-body {
+    padding: 1rem !important;
+}
+
+.p-card-title {
+    font-size: 1.3rem !important;
+}
+
+.p-card-content {
+    padding: 0rem 0 !important;
+    padding-top: 1rem !important;
+}
+
+.p-card {
+    border: var(--surface-d) 1px solid;
+    box-shadow: none !important;
+    border-radius: 2px;
+}

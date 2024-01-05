@@ -1,8 +1,8 @@
 <script setup>
 import Card from "primevue/card";
-import Tag from "primevue/tag";
 import TechIcon from "./TechIcon.vue";
 import Button from "primevue/button";
+import skillsData from "~/data/skills.json";
 
 const { getLocaleMessage } = useI18n();
 const language = useState("lang", () => "es");
@@ -12,7 +12,23 @@ const skills = ref([]);
 
 const loadFromLanguage = async () => {
   const messages = getLocaleMessage(language.value);
-  skills.value = messages.skills;
+  const skills_ = messages.skills;
+  const newSkills = [];
+
+  for (const section in skills_) {
+    const skills = skillsData[section];
+    const newSection = {
+      title: skills_[section],
+    };
+    if (skills.tags) {
+      newSection.tags = skills.tags;
+    } else if (skills.items) {
+      newSection.items = skills.items;
+    }
+    newSkills.push(newSection);
+  }
+
+  skills.value = newSkills;
 };
 
 watch(language, (value) => {

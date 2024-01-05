@@ -3,6 +3,8 @@ import Image from "primevue/image";
 import { computed } from "vue";
 import techIcons from "~/data/techicons.json";
 
+const isDark = useState("isDark", () => false);
+
 const props = defineProps({
   icon: {
     type: String,
@@ -11,10 +13,6 @@ const props = defineProps({
   size: {
     type: String,
     default: "small",
-  },
-  dark: {
-    type: Boolean,
-    default: false,
   },
   hover: {
     type: Boolean,
@@ -30,12 +28,13 @@ const props = defineProps({
   },
 });
 
+const style = ref(props.style);
 const class_ = computed(() => {
   return props.class;
 });
 
 const colorMode = computed(() => {
-  return props.dark ? "dark" : "light";
+  return isDark.value ? "dark" : "light";
 });
 
 const techIcon = computed(() => {
@@ -69,12 +68,22 @@ const type = computed(() => {
     icon.includes("class_dark") ||
     icon.includes("class_light")
   ) {
+    style.value = props.style;
     return "class";
   } else if (
     icon.includes("image") ||
     icon.includes("image_dark") ||
     icon.includes("image_light")
   ) {
+    if (
+      Object.keys(style.value).length === 0 &&
+      style.value.constructor === Object
+    ) {
+      style.value = {
+        "margin-bottom": "6px !important",
+      };
+    }
+
     return "image";
   }
 
@@ -93,6 +102,14 @@ const imageSizes = {
   medium: "20",
   large: "45",
   xlarge: "55",
+};
+
+const styleObjetToCss = (style) => {
+  let css = "";
+  for (const [key, value] of Object.entries(style)) {
+    css += `${key}: ${value};`;
+  }
+  return css;
 };
 </script>
 
@@ -122,7 +139,7 @@ const imageSizes = {
       v-tooltip.top="iconTitle"
       :pt="{
         image: {
-          style: 'margin-bottom: 6px !important;',
+          style: styleObjetToCss(style),
         },
       }"
     />

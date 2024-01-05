@@ -13,163 +13,22 @@
         "hobbies": "Hobbies"
     },
     "skills": {
-        "technologies": {
-            "title": "Tecnologías",
-            "items": [
-                "php",
-                "java",
-                "javascript",
-                "typescript",
-                "nodejs"
-            ]
-        },
-        "methodologies": {
-            "title": "Metodologías",
-            "tags": [
-                "agile",
-                "scrum",
-                "kanban",
-                "tdd",
-                "bdd",
-                "ddd",
-                "ci",
-                "cd",
-                "devops"
-            ]
-        },
-        "frameworks": {
-            "title": "Frameworks",
-            "items": [
-                "laravel",
-                "symfony",
-                "express",
-                "nextjs",
-                "nestjs",
-                "nuxtjs",
-                "loopback",
-                "electron",
-                "adonisjs",
-                "spring",
-                "springboot",
-                "ionic"
-            ]
-        },
-        "front": {
-            "title": "FrontEnd",
-            "items": [
-                "vue",
-                "angular",
-                "react",
-                "jquery",
-                "webpack",
-                "gulp",
-                "bootstrap",
-                "tailwindcss",
-                "materialize",
-                "primevue",
-                "vuetify",
-                "antdesign"
-            ]
-        },
-        "databases": {
-            "title": "Bases de Datos",
-            "items": [
-                "mysql",
-                "mssql",
-                "postgresql",
-                "mongodb",
-                "redis"
-            ]
-        },
-        "cloud": {
-            "title": "Cloud",
-            "items": [
-                "aws",
-                "azure",
-                "gcp"
-            ]
-        },
-        "infra": {
-            "title": "Infraestructura",
-            "items": [
-                "kubernetes",
-                "docker",
-                "terraform"
-            ]
-        },
-        "platforms": {
-            "title": "Plataformas",
-            "items": [
-                "heroku",
-                "netlify",
-                "firebase",
-                "digitalocean",
-                "railway",
-                "cloudflare"
-            ]
-        },
-        "cicd": {
-            "title": "CI/CD",
-            "items": [
-                "github",
-                "gitlab",
-                "bitbucket",
-                "aws",
-                "drone"
-            ]
-        },
-        "testing": {
-            "title": "Testing",
-            "items": [
-                "phpunit",
-                "jest",
-                "mocha",
-                "supertest",
-                "junit",
-                "mockito"
-            ]
-        },
-        "brokers": {
-            "title": "Brokers",
-            "items": [
-                "rabbitmq",
-                "redis"
-            ]
-        },
-        "monitoring": {
-            "title": "Monitoring",
-            "items": [
-                "sentry",
-                "datadog",
-                "prometheus",
-                "grafana",
-                "sumologic"
-            ]
-        },
-        "mobile": {
-            "title": "Mobile",
-            "items": [
-                "ionic",
-                "reactnative"
-            ]
-        },
-        "pubsub": {
-            "title": "Pub/Sub",
-            "items": [
-                "rabbitmq",
-                "redis",
-                "kafka"
-            ]
-        },
-        "iot": {
-            "title": "IoT",
-            "items": [
-                "arduino",
-                "raspberrypi",
-                "esp32",
-                "esp8266"
-            ]
-        }
+        "technologies": "Tecnologías",
+        "methodologies": "Metodologías",
+        "frameworks": "Frameworks",
+        "front": "FrontEnd",
+        "databases": "Bases de Datos",
+        "cloud": "Nube",
+        "infra": "Infraestructura",
+        "platforms": "Plataformas",
+        "cicd": "CI/CD",
+        "testing": "Pruebas",
+        "brokers": "Brokers",
+        "monitoring": "Monitoreo",
+        "mobile": "Móvil",
+        "pubsub": "Pub/Sub",
+        "iot": "IoT",
+        "quality": "Calidad"
     },
     "experience": [
         {
@@ -320,5 +179,17 @@
                 "react"
             ]
         }
-    ]
+    ],
+    "openToWork": {
+        "title": "Open to work",
+        "subtitle": "¿y si trabajamos juntos?",
+        "description": "Actualmente estoy buscando un nuevo desafío, si te interesa mi perfil no dudes en contactarme."
+    },
+    "projects": {
+        "type": "Tipo",
+        "motivation": "Motivación",
+        "technologies": "Tecnologías",
+        "repository": "Github",
+        "open": "Visitar"
+    }
 }

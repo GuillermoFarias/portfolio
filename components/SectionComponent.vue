@@ -24,7 +24,7 @@ const props = defineProps({
   <section class="fadein animation-duration-1000 w-full">
     <div class="grid">
       <!-- Only one column -->
-      <div v-if="columns.length === 0" class="col-12 pt-0">
+      <div v-if="columns.length === 0" class="col-12 pt-0 pb-0">
         <h2 class="text-2xl text-700 font-bold mt-1">
           <i class="pi pi-angle-double-right" style="font-size: 1.2rem"></i>
           {{ title }}
@@ -36,7 +36,7 @@ const props = defineProps({
 
       <!-- Multiple columns -->
       <template v-else-if="columns.length > 0" v-for="column in columns">
-        <div :class="column['class']">
+        <div :class="column['class'] + ` pt-0`">
           <h2 class="text-2xl text-700 font-bold mt-1">
             <i class="pi pi-angle-double-right" style="font-size: 1.2rem"></i>
             {{ column["title"] }}
@@ -51,44 +51,84 @@ const props = defineProps({
   </section>
 </template>
 <style scoped>
-.xl\:col-8 {
-  width: 64%;
+@media screen and (max-width: 575.98px) {
+  .xs\:col-12 {
+    width: 100%;
+  }
+
+  .xs\:col-8 {
+    width: 64%;
+  }
+
+  .xs\:col-4 {
+    width: 32.4%;
+  }
 }
 
-.lg\:col-8 {
-  width: 64%;
+@media screen and (min-width: 576px) {
+  .sm\:col-12 {
+    width: 100%;
+  }
+
+  .sm\:col-8 {
+    width: 64%;
+  }
+
+  .sm\:col-4 {
+    width: 32.4%;
+  }
 }
 
-.md\:col-8 {
-  width: 64%;
+@media screen and (min-width: 768px) {
+  .md\:col-12 {
+    width: 100%;
+  }
+
+  .md\:col-8 {
+    width: 64%;
+  }
+
+  .md\:col-4 {
+    width: 32.4%;
+  }
 }
 
-.sm\:col-8 {
-  width: 64%;
+@media screen and (min-width: 992px) {
+  .lg\:col-12 {
+    width: 100%;
+  }
+
+  .lg\:col-8 {
+    width: 64%;
+  }
+
+  .lg\:col-4 {
+    width: 32.4%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .xl\:col-12 {
+    width: 100%;
+  }
+
+  .xl\:col-8 {
+    width: 64%;
+  }
+  .xl\:col-4 {
+    width: 32.4%;
+  }
 }
 
 .col-8 {
   width: 64%;
 }
 
-.xl\:col-4 {
-    width: 32.4%;
-}
-
-.lg\:col-4 {
-    width: 32.4%;
-}
-
-.md\:col-4 {
-    width: 32.4%;
-}
-
-.sm\:col-4 {
-    width: 32.4%;
-}
-
 .col-4 {
-    width: 32.4%;
+  width: 32.4%;
 }
 
+.col-12 {
+  width: 100%;
+}
 </style>

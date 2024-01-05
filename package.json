@@ -18,12 +18,13 @@
     "nuxt-primevue": "^0.2.2",
     "sass": "^1.69.7",
     "vue": "^3.4.3",
+    "vue-gtag-next": "^1.14.0",
     "vue-router": "^4.2.5"
   },
   "dependencies": {
-    "string-width": "^1.0.2 || 2 || 3 || 4",
     "primeflex": "^3.3.1",
     "primeicons": "^6.0.1",
-    "primevue": "^3.45.0"
+    "primevue": "^3.45.0",
+    "string-width": "^1.0.2 || 2 || 3 || 4"
   }
 }

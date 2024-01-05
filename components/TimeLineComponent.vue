@@ -33,10 +33,27 @@ onMounted(() => {
         style:
           'width: 1px !important;background-color: var(--surface-d) !important',
       },
+      content: {
+        class: 'mt-1',
+      },
     }"
   >
     <template #marker="slotProps">
+      <Button
+        v-if="true"
+        :label="slotProps.item.company.avatar"
+        :style="
+          `boder-color:` +
+          slotProps.item.company.color +
+          `; color: ` +
+          slotProps.item.company.color
+        "
+        class="w-2rem h-2rem p-0"
+        rounded
+        outlined
+      ></Button>
       <Avatar
+        v-if="false"
         :label="slotProps.item.company.avatar"
         :style="
           `background-color:` +
@@ -67,8 +84,10 @@ onMounted(() => {
       </a>
       <Card
         class="mt-2 mb-4"
-        v-animateonscroll="{
-          enterClass: 'fadein',
+        :pt="{
+          content: {
+            class: 'pb-0',
+          },
         }"
       >
         <template #title>
@@ -103,26 +122,7 @@ onMounted(() => {
 </template>
 
 <style scoped>
-.p-card .p-card-body {
-  padding: 1rem !important;
-}
-
 .p-timeline-event-content {
   margin-top: 0.2rem !important;
-}
-
-.p-card-title {
-  font-size: 1.3rem !important;
-}
-
-.p-card-content {
-  padding: 0rem 0 !important;
-  padding-top: 1rem !important;
-}
-
-.p-card {
-  border: var(--surface-d) 1px solid;
-  box-shadow: none !important;
-  border-radius: 2px;
 }
 </style>

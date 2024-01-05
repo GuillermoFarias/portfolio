@@ -13,162 +13,22 @@
         "hobbies": "Hobbies"
     },
     "skills": {
-        "technologies": {
-            "title": "Technologies",
-            "items": [
-                "php",
-                "java",
-                "javascript",
-                "typescript",
-                "nodejs"
-            ]
-        },
-        "methodologies": {
-            "title": "Methodologies",
-            "tags": [
-                "agile",
-                "scrum",
-                "kanban",
-                "tdd",
-                "bdd",
-                "ddd",
-                "ci",
-                "cd",
-                "devops"
-            ]
-        },
-        "frameworks": {
-            "title": "Frameworks",
-            "items": [
-                "laravel",
-                "symfony",
-                "express",
-                "nextjs",
-                "nestjs",
-                "nuxtjs",
-                "loopback",
-                "electron",
-                "adonisjs",
-                "spring",
-                "springboot",
-                "ionic"
-            ]
-        },
-        "front": {
-            "title": "FrontEnd",
-            "items": [
-                "vue",
-                "angular",
-                "react",
-                "jquery",
-                "webpack",
-                "gulp",
-                "bootstrap",
-                "tailwindcss",
-                "materialize",
-                "primevue",
-                "vuetify",
-                "antdesign"
-            ]
-        },
-        "databases": {
-            "title": "Databases",
-            "items": [
-                "mysql",
-                "mssql",
-                "postgresql",
-                "mongodb",
-                "redis"
-            ]
-        },
-        "cloud": {
-            "title": "Cloud",
-            "items": [
-                "aws",
-                "azure",
-                "gcp"
-            ]
-        },
-        "infra": {
-            "title": "Infrastructure",
-            "items": [
-                "kubernetes",
-                "docker",
-                "terraform"
-            ]
-        },
-        "platforms": {
-            "title": "Platforms as a Service",
-            "items": [
-                "heroku",
-                "netlify",
-                "firebase",
-                "digitalocean",
-                "railway",
-                "cloudflare"
-            ]
-        },
-        "cicd": {
-            "title": "CI/CD",
-            "items": [
-                "github",
-                "gitlab",
-                "bitbucket",
-                "aws",
-                "drone"
-            ]
-        },
-        "testing": {
-            "title": "Testing",
-            "items": [
-                "phpunit",
-                "pest",
-                "jest",
-                "mocha",
-                "supertest",
-                "junit",
-                "mockito"
-            ]
-        },
-        "brokers": {
-            "title": "Brokers",
-            "items": [
-                "rabbitmq",
-                "redis"
-            ]
-        },
-        "monitoring": {
-            "title": "Monitoring",
-            "items": [
-                "sentry",
-                "datadog",
-                "prometheus",
-                "grafana",
-                "sumologic"
-            ]
-        },
-        "mobile": {
-            "title": "Mobile",
-            "items": [
-                "ionic",
-                "reactnative"
-            ]
-        },
-        "pubsub": {
-            "title": "Pub/Sub",
-            "items": [
-                "rabbitmq",
-                "redis",
-                "kafka"
-            ]
-        },
-        "iot": {
-            "title": "IoT",
-            "items": [
-                "arduino",
-                "raspberrypi"
-            ]
-        }
+        "technologies": "Technologies",
+        "methodologies": "Methodologies",
+        "frameworks": "Frameworks",
+        "front": "FrontEnd",
+        "databases": "Databases",
+        "cloud": "Cloud",
+        "infra": "Infra",
+        "platforms": "Platforms",
+        "cicd": "CI/CD",
+        "testing": "Testing",
+        "brokers": "Brokers",
+        "monitoring": "Monitoring",
+        "mobile": "Mobile",
+        "pubsub": "Pub/Sub",
+        "iot": "IoT",
+        "quality": "Quality"
     },
     "experience": [
         {
@@ -319,5 +179,17 @@
                 "react"
             ]
         }
-    ]
+    ],
+    "openToWork": {
+        "title": "Open to work",
+        "subtitle": "What if we work together?",
+        "description": "I am currently looking for a new challenge, if you are interested in my profile, do not hesitate to contact me."
+    },
+    "projects": {
+        "type": "Type",
+        "motivation": "Motivation",
+        "technologies": "Technologies",
+        "repository": "Github",
+        "open": "Open"
+    }
 }

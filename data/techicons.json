@@ -335,5 +335,25 @@
     "raspberrypi": {
         "name": "Raspberry Pi",
         "image": "/icons/raspberrypi.png"
+    },
+    "composer": {
+        "name": "Composer",
+        "image": "/icons/composer.png"
+    },
+    "codecov": {
+        "name": "Codecov",
+        "image": "/icons/codecov.svg"
+    },
+    "codefactor": {
+        "name": "CodeFactor",
+        "image": "/icons/codefactor.svg"
+    },
+    "codacy": {
+        "name": "Codacy",
+        "image": "/icons/codacy.svg"
+    },
+    "sonarqube": {
+        "name": "SonarQube",
+        "image": "https://user-images.githubusercontent.com/25181517/184146221-671413cb-b1ae-47db-a232-b37c99281516.png"
     }
 }
