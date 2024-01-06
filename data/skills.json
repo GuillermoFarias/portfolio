@@ -97,10 +97,8 @@
             "phpunit",
             "pest",
             "jest",
-            "mocha",
             "supertest",
-            "junit",
-            "mockito"
+            "junit"
         ]
     },
     "brokers": {
