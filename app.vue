@@ -3,6 +3,7 @@ import { useConfigStore } from "~/store/config";
 import { useI18n } from "#imports";
 
 const i18n = useI18n();
+
 const darkTheme = "/themes/bootstrap4-dark-blue/theme.css";
 const lightTheme = "/themes/bootstrap4-light-blue/theme.css";
 

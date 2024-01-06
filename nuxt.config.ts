@@ -26,6 +26,7 @@ export default defineNuxtConfig({
       LINKEDIN: process.env.NUXT_LINKEDIN,
       GITHUB: process.env.NUXT_GITHUB,
       MEDIUM: process.env.NUXT_MEDIUM,
+      gtagId: "G-880FF1HLF1",
     },
   },
 });
