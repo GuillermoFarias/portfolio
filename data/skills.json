@@ -5,7 +5,8 @@
             "java",
             "javascript",
             "typescript",
-            "nodejs"
+            "nodejs",
+            "elixir"
         ]
     },
     "methodologies": {
@@ -31,7 +32,8 @@
             "adonisjs",
             "spring",
             "springboot",
-            "ionic"
+            "ionic",
+            "phoenix"
         ]
     },
     "front": {
