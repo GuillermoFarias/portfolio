@@ -61,7 +61,7 @@
                 "gcp",
                 "github",
                 "jira",
-                "rabbit"
+                "rabbitmq"
             ]
         },
         {
