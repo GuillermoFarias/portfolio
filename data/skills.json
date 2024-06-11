@@ -6,7 +6,7 @@
             "javascript",
             "typescript",
             "nodejs",
-            "elixir"
+            "python"
         ]
     },
     "methodologies": {
@@ -33,7 +33,7 @@
             "spring",
             "springboot",
             "ionic",
-            "phoenix"
+            "django"
         ]
     },
     "front": {
