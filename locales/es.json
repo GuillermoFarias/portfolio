@@ -33,6 +33,39 @@
     "experience": [
         {
             "company": {
+                "name": "Simpliroute (Latam)",
+                "industry": "Logistics",
+                "url": "https://simpliroute.com/",
+                "color": "#4B3A9B",
+                "avatar": "S",
+                "description": "Simpliroute es una solución completa para el área de logística, diseñada para atender las necesidades de pequeñas, medianas y grandes empresas en Latam"
+            },
+            "from": "2024",
+            "to": "2024",
+            "job": {
+                "title": "Ingeniero de Software Senior",
+                "team": "Integrations",
+                "description": "Parte del equipo de Integraciones, resolvemos la cruda tarea de hacer trabajar nuestra plataforma con el negocio del cliente, entendiedo y analizando ambas partes.",
+                "lasProject": {
+                    "position": "Dev",
+                    "title": "Migrar integración de ruteo logístico para Walmart"
+                }
+            },
+            "technologies": [
+                "python",
+                "postgresql",
+                "mongodb",
+                "redis",
+                "docker",
+                "kubernetes",
+                "gcp",
+                "github",
+                "jira",
+                "rabbit"
+            ]
+        },
+        {
+            "company": {
                 "name": "Linio MX (Latam)",
                 "industry": "E-commerce",
                 "url": "https://www.linio.com.mx/",
