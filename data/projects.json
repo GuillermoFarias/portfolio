@@ -1,5 +1,21 @@
 [
     {
+        "title": "Cliper",
+        "description_es": "Acortador de urls últra rápido",
+        "description_en": "Ultra fast url shortener",
+        "image": "/images/projects/cliper.png",
+        "type": "Web, Back and Front",
+        "motivation": "Coding challenge",
+        "technologies": [
+            "python",
+            "redis",
+            "vuejs",
+            "kubernetes"
+        ],
+        "repository": "https://github.com/GuillermoFarias/cliper",
+        "url": "https://cliper-app.gfarias.cl/"
+    },
+    {
         "title": "UFacil",
         "description_es": "Herramienta web para convertir UF a CLP",
         "description_en": "Web tool to convert UF to CLP",
