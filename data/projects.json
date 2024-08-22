@@ -9,7 +9,7 @@
         "technologies": [
             "python",
             "redis",
-            "vuejs",
+            "vue",
             "kubernetes"
         ],
         "repository": "https://github.com/GuillermoFarias/cliper",
