@@ -44,7 +44,7 @@ const fontMap: Record<number, string> = {
   <Avatar :class="sizeMap[size] + ` border-2 `" :shape="shape">
     <div style="position: relative; text-align: center; color: white; top: 2px">
       <Image
-        src="https://media.licdn.com/dms/image/v2/D4E03AQGw8Slzo2c1Pg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1695667961630?e=1729728000&v=beta&t=Lvk4pvwZ6CljfoEAM-_TTjlyZgNV6M7bdr9Zja86bQY"
+        src="https://media.licdn.com/dms/image/v2/D4E03AQGw8Slzo2c1Pg/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1695667961630?e=1738195200&v=beta&t=MokbkmhJrnAuKQNFZTJ_rGHo25n4Ai19Qe7jRHOZ2LU"
         alt="Image"
         width="100%"
         class="pb-0"
